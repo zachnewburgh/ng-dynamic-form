@@ -1,4 +1,5 @@
 <div *ngFor="let field of fields" [ngSwitch]="field.type" [class]="field.wrapperClass">
     <app-input *ngSwitchCase="'input'" [data]="data" [options]="field.options"></app-input>
+    <app-select *ngSwitchCase="'select'" [data]="data" [options]="field.options"></app-select>
     <app-textarea *ngSwitchCase="'textarea'" [data]="data" [options]="field.options"></app-textarea>
 </div>

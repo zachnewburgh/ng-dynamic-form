@@ -7,6 +7,18 @@
                     "dataAttr": "exampleAttribute",
                     "placeholder": "Example Input"
                 }
+            },
+            {
+                "type": "select",
+                "options": {
+                    "dataAttr": "exampleSelect",
+                    "selectOptions": [
+                        {"key": "exampleValue1", "label": "Example Value 1"},
+                        {"key": "exampleValue2", "label": "Example Value 2"},
+                        {"key": "exampleValue3", "label": "Example Value 3"},
+                        {"key": "exampleValue4", "label": "Example Value 4"}
+                    ]
+                }
             }
         ]
     }

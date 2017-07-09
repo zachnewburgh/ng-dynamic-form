@@ -1,0 +1,20 @@
+<div [class]="wrapperClass">
+  <label *ngIf="label"
+         [class]="labelClass"
+         [innerHtml]="label"></label>
+  <select [(ngModel)]="data[dataAttr]"
+          [autofocus]="autofocus"
+          [class]="elementClass"
+          [disabled]="disabled"
+          [multiple]="multiple"
+          [name]="name"
+          [required]="required"
+          [size]="size">
+    <option *ngFor="let opt of selectOptions"
+            [class]="optClass"
+            [disabled]="optDisabled"
+            [label]="opt.label"
+            [selected]="opt.key === data[dataAttr]"
+            [value]="opt.key"></option>
+  </select>
+</div>

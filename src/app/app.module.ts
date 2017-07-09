@@ -8,6 +8,7 @@ import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { FieldComponent } from './dynamic-form/field/field.component';
 import { InputComponent } from './dynamic-form/field/input/input.component';
 import { TextareaComponent } from './dynamic-form/field/textarea/textarea.component';
+import { SelectComponent } from './dynamic-form/field/select/select.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TextareaComponent } from './dynamic-form/field/textarea/textarea.compon
     FieldComponent,
     InputComponent,
     TextareaComponent,
-    DynamicFormComponent
+    DynamicFormComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,

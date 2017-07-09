@@ -11,7 +11,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.data = {
-      exampleAttribute: 'Example Value'
+      exampleAttribute: 'Example Value',
+      exampleSelect: ['exampleValue2']
     }
   }
 }
