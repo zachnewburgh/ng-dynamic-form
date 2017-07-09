@@ -6,20 +6,33 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./textarea.component.css']
 })
 export class TextareaComponent implements OnInit {
-  @Input() cols: number;
-  @Input() disabled: boolean;
-  @Input() label: string;
-  @Input() name: string;
-  @Input() placeholder: string;
-  @Input() readOnly: boolean;
-  @Input() required: boolean;
-  @Input() rows: number;
-  @Input() wrap: string;
-  @Input() value: string;
+  @Input() options: any;
+  cols: number;
+  disabled: boolean;
+  elementClass: string;
+  label: string;
+  name: string;
+  placeholder: string;
+  readOnly: boolean;
+  required: boolean;
+  rows: number;
+  wrap: string;
+  value: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.cols = this.options['cols'];
+    this.disabled = this.options['disabled'];
+    this.elementClass = this.options['elementClass'];
+    this.label = this.options['label'];
+    this.name = this.options['name'];
+    this.placeholder = this.options['placeholder'] || '';
+    this.readOnly = this.options['readOnly'];
+    this.required = this.options['required'];
+    this.rows = this.options['rows'];
+    this.wrap = this.options['wrap'];
+    this.value = this.options['value'];
   }
 
 }

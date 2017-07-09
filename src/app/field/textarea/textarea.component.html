@@ -1,6 +1,8 @@
-<label *ngIf="label" [innerHtml]="label"></label>
+<label *ngIf="label"
+       [innerHtml]="label"></label>
 <textarea [cols]="cols"
           [disabled]="disabled"
+          [class]="elementClass"
           [name]="name"
           [placeholder]="placeholder"
           [readonly]="readOnly"
