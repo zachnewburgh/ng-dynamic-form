@@ -1,0 +1,12 @@
+[
+    {
+        "fields": [
+            {
+                "type": "input",
+                "options": {
+                    "placeholder": "Example Input"
+                }
+            }
+        ]
+    }
+]
