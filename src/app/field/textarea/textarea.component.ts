@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TextareaComponent implements OnInit {
   @Input() cols: number;
   @Input() disabled: boolean;
+  @Input() label: string;
   @Input() name: string;
   @Input() placeholder: string;
   @Input() readOnly: boolean;
