@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./field.component.css']
 })
 export class FieldComponent implements OnInit {
+  @Input() data: any;
   @Input() fields: any[];
 
   constructor() { }

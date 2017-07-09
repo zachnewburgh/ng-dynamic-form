@@ -6,7 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent implements OnInit {
+  @Input() data: any;
   @Input() options: any;
+  dataAttr: string;
   disabled: boolean;
   elementClass: string;
   label: string;
@@ -27,6 +29,7 @@ export class InputComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.dataAttr = this.options['dataAttr'];
     this.disabled = this.options['disabled'];
     this.elementClass = this.options['elementClass'];
     this.label = this.options['label'];

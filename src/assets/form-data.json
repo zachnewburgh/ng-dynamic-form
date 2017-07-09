@@ -4,6 +4,7 @@
             {
                 "type": "input",
                 "options": {
+                    "dataAttr": "exampleAttribute",
                     "placeholder": "Example Input"
                 }
             }

@@ -2,7 +2,8 @@
     <label *ngIf="label"
            [class]="labelClass"
            [innerHtml]="label"></label>
-    <input [class]="elementClass"
+    <input [(ngModel)]="data[dataAttr]"
+           [class]="elementClass"
            [disabled]="disabled"
            [max]="max"
            [min]="min"

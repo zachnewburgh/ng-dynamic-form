@@ -6,8 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./textarea.component.css']
 })
 export class TextareaComponent implements OnInit {
+  @Input() data: any;
   @Input() options: any;
   cols: number;
+  dataAttr: string;
   disabled: boolean;
   elementClass: string;
   label: string;
@@ -25,6 +27,7 @@ export class TextareaComponent implements OnInit {
 
   ngOnInit() {
     this.cols = this.options['cols'];
+    this.dataAttr = this.options['dataAttr'];
     this.disabled = this.options['disabled'];
     this.elementClass = this.options['elementClass'];
     this.label = this.options['label'];

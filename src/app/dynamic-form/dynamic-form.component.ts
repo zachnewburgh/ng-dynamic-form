@@ -9,6 +9,7 @@ import { Observable } from 'rxjs/Observable';
   providers: [AppService]
 })
 export class DynamicFormComponent implements OnInit {
+  @Input() data: any;
   @Input() form: any[];
   formClass: string;
 

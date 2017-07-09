@@ -1,5 +1,5 @@
 <div [class]="formClass">
     <div *ngFor="let container of form" [class]="container.containerClass">
-        <app-field [fields]="container.fields"></app-field>
+        <app-field [fields]="container.fields" [data]="data"></app-field>
     <div>
 </div>

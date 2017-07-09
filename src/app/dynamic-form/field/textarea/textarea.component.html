@@ -2,7 +2,8 @@
     <label *ngIf="label"
            [class]="labelClass"
            [innerHtml]="label"></label>
-    <textarea [cols]="cols"
+    <textarea [(ngModel)]="data[dataAttr]"
+              [cols]="cols"
               [class]="elementClass"
               [disabled]="disabled"
               [name]="name"
