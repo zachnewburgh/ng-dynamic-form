@@ -11,13 +11,15 @@ export class TextareaComponent implements OnInit {
   disabled: boolean;
   elementClass: string;
   label: string;
+  labelClass: string;
   name: string;
   placeholder: string;
   readOnly: boolean;
   required: boolean;
   rows: number;
-  wrap: string;
   value: string;
+  wrap: string;
+  wrapperClass: string;
 
   constructor() { }
 
@@ -26,13 +28,15 @@ export class TextareaComponent implements OnInit {
     this.disabled = this.options['disabled'];
     this.elementClass = this.options['elementClass'];
     this.label = this.options['label'];
+    this.labelClass = this.options['labelClass'];
     this.name = this.options['name'];
     this.placeholder = this.options['placeholder'] || '';
     this.readOnly = this.options['readOnly'];
     this.required = this.options['required'];
     this.rows = this.options['rows'];
-    this.wrap = this.options['wrap'];
     this.value = this.options['value'];
+    this.wrap = this.options['wrap'];
+    this.wrapperClass = this.options['wrapperClass'];
   }
 
 }

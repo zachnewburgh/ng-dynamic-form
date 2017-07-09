@@ -1,11 +1,14 @@
-<label *ngIf="label"
-       [innerHtml]="label"></label>
-<textarea [cols]="cols"
-          [disabled]="disabled"
-          [class]="elementClass"
-          [name]="name"
-          [placeholder]="placeholder"
-          [readonly]="readOnly"
-          [required]="required"
-          [rows]="rows"
-          [wrap]="wrap">{{value}}</textarea>
+<div [class]="wrapperClass">
+    <label *ngIf="label"
+           [class]="labelClass"
+           [innerHtml]="label"></label>
+    <textarea [cols]="cols"
+              [class]="elementClass"
+              [disabled]="disabled"
+              [name]="name"
+              [placeholder]="placeholder"
+              [readonly]="readOnly"
+              [required]="required"
+              [rows]="rows"
+              [wrap]="wrap">{{value}}</textarea>
+</div>
