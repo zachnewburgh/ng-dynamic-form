@@ -10,6 +10,7 @@ export class InputComponent implements OnInit {
   disabled: boolean;
   elementClass: string;
   label: string;
+  labelClass: string;
   max: number;
   min: number;
   name: string;
@@ -20,6 +21,7 @@ export class InputComponent implements OnInit {
   step: number;
   type: string;
   value: string;
+  wrapperClass: string;
 
   constructor() {
   }
@@ -28,6 +30,7 @@ export class InputComponent implements OnInit {
     this.disabled = this.options['disabled'];
     this.elementClass = this.options['elementClass'];
     this.label = this.options['label'];
+    this.labelClass = this.options['labelClass'];
     this.max = this.options['max'];
     this.min = this.options['mim'];
     this.name = this.options['name'];
@@ -38,6 +41,7 @@ export class InputComponent implements OnInit {
     this.step = this.options['step'];
     this.type = this.options['type'];
     this.value = this.options['value'] || '';
+    this.wrapperClass = this.options['wrapperClass'];
   }
 
 }
