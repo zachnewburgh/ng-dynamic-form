@@ -1,4 +1,6 @@
-# DynamicForm
+# NgDynamicForm
+
+This application provides an example of how to generate a dynamic form with Angular. Set `data` in AppComponent to your data model, and feed in your form data into `assets/form-data.json`, after which your form will be dynamically rendered.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
