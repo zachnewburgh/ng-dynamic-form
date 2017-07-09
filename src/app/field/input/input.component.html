@@ -1,12 +1,14 @@
-<label *ngIf="label" [innerHtml]="label"></label>
-<input [type]="type"
-       [name]="name"
-       [value]="value"
-       [placeholder]="placeholder"
-       [disabled]="disabled"
+<label *ngIf="label"
+       [elementClass]="elementClass"
+       [innerHtml]="label"></label>
+<input [disabled]="disabled"
        [max]="max"
        [min]="min"
+       [name]="name"
        [pattern]="pattern"
+       [placeholder]="placeholder"
        [readonly]="readOnly"
        [required]="required"
-       [step]="step">
+       [step]="step"
+       [type]="type"
+       [value]="value">
