@@ -1,4 +1,4 @@
-<label [innerHtml]="label"></label>
+<label *ngIf="label" [innerHtml]="label"></label>
 <input [type]="type"
        [name]="name"
        [value]="value"
