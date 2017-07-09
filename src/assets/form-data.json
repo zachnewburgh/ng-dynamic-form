@@ -4,8 +4,15 @@
             {
                 "type": "input",
                 "options": {
-                    "dataAttr": "exampleAttribute",
+                    "dataAttr": "exampleInput",
                     "placeholder": "Example Input"
+                }
+            },
+            {
+                "type": "textarea",
+                "options": {
+                    "dataAttr": "exampleTextarea",
+                    "placeholder": "Example Textarea"
                 }
             },
             {

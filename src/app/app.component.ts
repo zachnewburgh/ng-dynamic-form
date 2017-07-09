@@ -11,8 +11,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.data = {
-      exampleAttribute: 'Example Value',
-      exampleSelect: ['exampleValue2']
+      exampleInput: 'Example Value',
+      exampleSelect: ['exampleValue2'],
+      exampleTextarea: 'Example Value'
     }
   }
 }
